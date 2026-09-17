@@ -17,7 +17,13 @@ def drop_selected_features(data):
     return data
 
 def preprocess_data(data):
-    cleaned_Data = clean_col_names(data)
-    cleaned_Data = drop_missing_target(cleaned_Data)
-    cleaned_Data = drop_selected_features(cleaned_Data)
-    return cleaned_Data 
+    cleaned_data = clean_col_names(data)
+    cleaned_data = drop_missing_target(cleaned_data)
+    cleaned_data = drop_selected_features(cleaned_data)
+    return cleaned_data 
+
+def split_features_target(data):
+    x = data.drop(columns=["Life expectancy"])
+    y = data["Life expectancy"]
+
+    return x, y
