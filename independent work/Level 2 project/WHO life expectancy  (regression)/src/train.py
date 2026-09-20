@@ -12,6 +12,6 @@ def save_model(model, path):
     model.save_model(path)
 
 def load_model(path):
-    model = CatBoostRegressor
+    model = CatBoostRegressor()
     model.load_model(path)
     return model
