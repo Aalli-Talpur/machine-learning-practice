@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .env
+/independent work/Level 2 project/Football_Match (Classification)/Data/
